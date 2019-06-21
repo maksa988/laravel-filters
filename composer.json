@@ -1,0 +1,29 @@
+{
+    "name": "maksa988/laravel-filters",
+    "description": "Filters for Laravel",
+    "keywords": [
+        "laravel",
+        "filters"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "maksa988",
+            "email": "maksa988ua@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "^5.3",
+        "illuminate/database": "^5.3",
+        "illuminate/http": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Maksa988\\LaravelFilters\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
