@@ -1,0 +1,19 @@
+<?php
+
+namespace DummyNamespace;
+
+use Maksa988\LaravelFilters\Filters;
+
+class DummyClass extends Filters
+{
+    /**
+     * Available filters
+     *
+     * @var array
+     */
+    protected $filters = [
+        //
+    ];
+
+    //
+}
