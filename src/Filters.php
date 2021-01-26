@@ -43,10 +43,10 @@ abstract class Filters
         $this->builder = $builder;
 
         $this->getFilters()
-            ->filter(function($filter) {
+            ->filter(function($value, $filter) {
                 return method_exists($this, $filter);
             })
-            ->each(function($filter, $value) {
+            ->each(function($value, $filter) {
                 $this->$filter($value);
             });
 
@@ -60,6 +60,6 @@ abstract class Filters
     {
         return collect($this->request->only($this->filters))->filter(function ($item) {
             return ! is_null($item);
-        })->flip();
+        });
     }
 }
